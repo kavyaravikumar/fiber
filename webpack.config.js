@@ -1,4 +1,6 @@
+// includes path module
 var path = require('path');
+// includes webpack module
 var webpack = require('webpack');
 
 //exports the configuration object
@@ -41,7 +43,7 @@ module.exports = {
     //The list of extensions that help in resolving the modules
     extensions: ['', '.js']
   },
-  //
+  // resolveLoader -- options affecting resolving of loaders
   resolveLoader: {
     'fallback': path.join(__dirname, 'node_modules')
   },
